@@ -1,11 +1,13 @@
 // THEME
-const themeBtn = document.getElementById("theme-id");
+const themeBtn = document.querySelectorAll(".theme");
 const body = document.body;
-themeBtn.addEventListener("click", () => {
-  body.classList.toggle("dark-theme");
-  body.classList.contains("dark-theme")
-    ? (themeBtn.textContent = "light mode")
-    : (themeBtn.textContent = "dark mode");
+themeBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    body.classList.toggle("dark-theme");
+    body.classList.contains("dark-theme")
+      ? (btn.textContent = "light mode")
+      : (btn.textContent = "dark mode");
+  });
 });
 
 // NAV

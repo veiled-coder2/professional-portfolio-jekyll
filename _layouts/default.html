@@ -12,12 +12,17 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/default.css" />
+    <link
+      rel="stylesheet"
+      href="{{ site.baseurl }}/assets/styles/default.css"
+    />
   </head>
   <body>
-    <button class="theme" id="theme-id">DARK MODE</button>
-    {% include nav.html%} 
-    
-    <script src={{site.baseurl}}/assets/js/script.js></script>
+    <div class="desktopTheme-btn">{%include theme.html%}</div>
+    <div class="body-container">
+      {% include nav.html%}
+      <p class="main-content">MY MAIN CONTENT Lorem i</p>
+    </div>
+    <script src="{{site.baseurl}}/assets/js/script.js"></script>
   </body>
 </html>
