@@ -16,12 +16,15 @@
       rel="stylesheet"
       href="{{ site.baseurl }}/assets/styles/default.css"
     />
+    {% if page.css%} {%for stylesheet in page.css %}
+    <link rel="stylesheet" href="{{site.baseurl}}/{{stylesheet}}" />
+    {% endfor%} {% endif%}
   </head>
   <body>
     <div class="desktopTheme-btn">{%include theme.html%}</div>
     <div class="body-container">
       {% include nav.html%}
-      <p class="main-content">MY MAIN CONTENT Lorem i</p>
+      <main class="main-content">{{content}}</main>
     </div>
     <script src="{{site.baseurl}}/assets/js/script.js"></script>
   </body>
