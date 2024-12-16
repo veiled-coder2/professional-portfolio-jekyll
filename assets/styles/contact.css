@@ -1,0 +1,12 @@
+.contact {
+  display: flex;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+.contact a img {
+  width: 5rem;
+  height: 5rem;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 10px 15px var(--contact-shadow), 0 4px 6px var(--contact-shadow);
+  /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); */
+}
