@@ -1,0 +1,29 @@
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+}
+.skills-icon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  justify-items: center;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  align-self: stretch;
+}
+.skills-icon img {
+  width: 5rem;
+  height: auto;
+}
+.skills-icon .jekyll {
+  width: 14rem;
+  align-self: start;
+}
+
+@media (max-width: 768px) {
+  .skills-icon .jekyll {
+    width: 7rem;
+    align-self: center;
+  }
+}
