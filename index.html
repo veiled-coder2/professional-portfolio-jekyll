@@ -4,6 +4,7 @@ css:
   - "/assets/styles/index.css"
   - "/assets/styles/contact.css"
   - "/assets/styles/skills.css"
+  - "/assets/styles/projects.css"
 ---
 
 <section class="hero-section">
@@ -30,8 +31,16 @@ css:
 <section class="skills-section">
   <h2>TECHNOLOGIES</h2>
   {% include skills.html %}
+</section>
+
+<section class="project-section">
   <h2>PROJECTS</h2>
-  {% for project in site.projects %}
-  <p>{{project.title}}</p>
-  {% endfor %}
+  <div class="project-container">
+    {% for project in site.projects %}
+    <div class="project-item">
+      <img src="{{site.baseurl}}/{{project.imageUrl}}" />
+      <p>{{project.title}}</p>
+    </div>
+    {% endfor %}
+  </div>
 </section>

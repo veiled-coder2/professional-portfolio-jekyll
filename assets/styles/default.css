@@ -11,18 +11,18 @@
   --text-color: #324054;
   --white: white;
   --hero-bg: rgb(166, 226, 226);
-  --svg-stroke-color: #324054;
   --nav-bg: white;
   --contact-shadow: rgba(0, 0, 0, 0.1);
+  --projectImg-bg: #324054;
 }
 body.dark-theme {
   --primary-color: white;
   --text-color: #e6edf7;
   --bg-color: #43937e;
   --hero-bg: rgb(16, 54, 54);
-  --svg-stroke-color: #e6edf7;
   --nav-bg: #b4d4d4;
   --contact-shadow: rgb(0, 0, 0);
+  --projectImg-bg: #43937e;
 }
 html {
   font-size: 62.5%;
