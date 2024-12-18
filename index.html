@@ -30,4 +30,8 @@ css:
 <section class="skills-section">
   <h2>TECHNOLOGIES</h2>
   {% include skills.html %}
+  <h2>PROJECTS</h2>
+  {% for project in site.projects %}
+  <p>{{project.title}}</p>
+  {% endfor %}
 </section>
