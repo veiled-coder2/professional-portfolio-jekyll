@@ -71,6 +71,16 @@ button.view-project:hover,
   background-color: green;
 }
 
+/* .............................PROJECT MODAL.................... */
+.project-modal {
+  z-index: 90;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
 @media (max-width: 425px) {
   .filter-container button {
     padding: 0.5em 1em;

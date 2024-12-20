@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
       projects.forEach((project) => {
         const stack = project.getAttribute("data-stack");
         if (filtertype === "all" || stack.includes(filtertype)) {
-          // project.style.width = "100%";
           project.style.display = "block";
           novisibleProject++;
         } else {
@@ -57,3 +56,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// PROJECT MODAL
