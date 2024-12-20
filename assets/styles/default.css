@@ -14,6 +14,8 @@
   --nav-bg: white;
   --contact-shadow: rgba(0, 0, 0, 0.1);
   --projectImg-bg: #324054;
+  --projectDetails-bg: rgb(37, 35, 52);
+  --pd-text: rgb(166, 226, 226);
 }
 body.dark-theme {
   --primary-color: white;
@@ -23,6 +25,8 @@ body.dark-theme {
   --nav-bg: #b4d4d4;
   --contact-shadow: rgb(0, 0, 0);
   --projectImg-bg: #43937e;
+  --projectDetails-bg: #185142;
+  --pd-text: rgb(0, 0, 0);
 }
 html {
   font-size: 62.5%;

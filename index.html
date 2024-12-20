@@ -34,12 +34,31 @@ css:
 </section>
 
 <section class="project-section">
-  <h2>PROJECTS</h2>
+  <h2 class="project-h2">PROJECTS</h2>
+  <div class="filter-container">
+    <button data-filter="all">All</button>
+    <button data-filter="html">Html</button>
+    <button data-filter="css">Css</button>
+    <button data-filter="javascript">JavaScript</button>
+    <button data-filter="jekyll">Jekyll</button>
+    <button data-filter="ruby">Ruby</button>
+    <button data-filter="react">React</button>
+    <button data-filter="bootstrap">Bootstrap</button>
+  </div>
   <div class="project-container">
     {% for project in site.projects %}
-    <div class="project-item">
-      <img src="{{site.baseurl}}/{{project.imageUrl}}" />
-      <p>{{project.title}}</p>
+    <div class="project-item" data-stack="{{project.technologies | join: ' '}}">
+      <img
+        src="{{site.baseurl}}/{{project.imageUrl}}"
+        alt="{{project.title}}"
+      />
+      <div class="project-details">
+        <div>
+          <p>{{project.title}}</p>
+          <p><b>{{project.technologies | join:", " | upcase}}</b></p>
+        </div>
+        <button class="view-project">VIEW PROJECT</button>
+      </div>
     </div>
     {% endfor %}
   </div>
