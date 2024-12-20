@@ -21,10 +21,11 @@ hamburger.addEventListener("click", () => {
 
 //PROJECT FILTER
 console.log("ok");
+const projects = document.querySelectorAll(".project-item");
 document.addEventListener("DOMContentLoaded", function () {
   const filterBtns = document.querySelectorAll("[data-filter]");
-  const projects = document.querySelectorAll(".project-item");
 
+  // FILTER LOGIC
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       filterBtns.forEach((button) => {
@@ -42,19 +43,31 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
           project.style.display = "none";
         }
-      });
 
-      if (novisibleProject === 1 && window.innerWidth >= 725) {
-        projects.forEach((project) => {
-          project.style.width = "30%";
-        });
-      } else {
-        projects.forEach((project) => {
-          project.style.width = "100%";
-        });
-      }
+        if (novisibleProject === 1 && window.innerWidth >= 725) {
+          projects.forEach((project) => {
+            project.style.width = "30%";
+          });
+        } else {
+          projects.forEach((project) => {
+            project.style.width = "100%";
+          });
+        }
+      });
+    });
+
+    // MODAL LOGIC
+  });
+});
+// PROJECT MODAL
+const projectContainer = document.querySelector(".main-project-container");
+// MODAL
+const viewProjectBtns = document.querySelectorAll(".view-project");
+
+projects.forEach((project) => {
+  viewProjectBtns.forEach((viewBtn) => {
+    viewBtn.addEventListener("click", () => {
+      console.log("view btn clicked");
     });
   });
 });
-
-// PROJECT MODAL

@@ -9,11 +9,11 @@
   align-items: center;
   justify-content: space-between;
 }
-.project-h2 {
+/* .project-h2 {
 }
 .project-heading .filter-container {
-  /* display: flex; */
-}
+  display: flex;
+} */
 .project-container {
   align-self: stretch;
   width: 100%;
@@ -74,12 +74,21 @@ button.view-project:hover,
 /* .............................PROJECT MODAL.................... */
 .project-modal {
   z-index: 90;
-  background-color: red;
+  background-color: rgba(46, 34, 34, 0.509);
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-project-container {
+  width: 90%;
+  max-width: 50rem;
+  height: 90%;
+  background-color: aquamarine;
 }
 @media (max-width: 425px) {
   .filter-container button {
