@@ -61,13 +61,39 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // PROJECT MODAL
 const projectContainer = document.querySelector(".main-project-container");
+const projectModal = document.querySelector(".project-modal");
 // MODAL
 const viewProjectBtns = document.querySelectorAll(".view-project");
 
 projects.forEach((project) => {
-  viewProjectBtns.forEach((viewBtn) => {
-    viewBtn.addEventListener("click", () => {
-      console.log("view btn clicked");
-    });
+  const viewBtn = project.querySelector(".view-project");
+  viewBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const projectId = project.getAttribute("data-projectId");
+    const matchedProject = Array.from(projects).find(
+      (currentProject) =>
+        currentProject.getAttribute("data-projectId") === projectId
+    );
+    const projectUrl = matchedProject.getAttribute("data-projectUrl");
+    console.log(projectUrl);
+
+    // FETCH PROJECT URL CONTENT
+    fetch(projectUrl)
+      .then((response) => response.text())
+      .then((html) => {
+        projectModal.style.display = "flex";
+        projectContainer.innerHTML = "";
+        projectContainer.innerHTML = html;
+        // Close modal logic
+        const closeModalBtn = document.querySelector(".close-modal");
+        if (closeModalBtn) {
+          closeModalBtn.addEventListener("click", () => {
+            projectModal.style.display = "none";
+          });
+        }
+      })
+      .catch((e) => console.log("error getting details", e));
   });
 });
+
+// console.log(projects);

@@ -47,7 +47,12 @@ css:
   </div>
   <div class="project-container">
     {% for project in site.projects %}
-    <div class="project-item" data-stack="{{project.technologies | join: ' '}}">
+    <div
+      class="project-item"
+      data-stack="{{project.technologies | join: ' '}}"
+      data-projectId="{{project.projectid}}"
+      data-projectUrl="{{site.baseurl}}{{project.url}}"
+    >
       <img
         src="{{site.baseurl}}/{{project.imageUrl}}"
         alt="{{project.title}}"
@@ -57,12 +62,13 @@ css:
           <p>{{project.title}}</p>
           <p><b>{{project.technologies | join:", " | upcase}}</b></p>
         </div>
+
         <button class="view-project">VIEW PROJECT</button>
       </div>
     </div>
     <!-- PROJECT MODAL -->
-    <div class="project-moda">
-      <div class="main-project-container">{{project}}</div>
+    <div class="project-modal">
+      <div class="main-project-container"></div>
     </div>
 
     {% endfor %}

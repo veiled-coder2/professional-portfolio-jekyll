@@ -80,7 +80,7 @@ button.view-project:hover,
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -89,6 +89,13 @@ button.view-project:hover,
   max-width: 50rem;
   height: 90%;
   background-color: aquamarine;
+  position: relative;
+}
+.close-modal {
+  font-size: 3rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 @media (max-width: 425px) {
   .filter-container button {
