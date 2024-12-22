@@ -80,22 +80,74 @@ button.view-project:hover,
   left: 0;
   width: 100vw;
   height: 100vh;
+  overflow: auto;
   display: none;
   justify-content: center;
   align-items: center;
 }
 .main-project-container {
   width: 90%;
-  max-width: 50rem;
-  height: 90%;
-  background-color: aquamarine;
+  height: 100vh;
+  max-width: 80rem;
+  height: 100;
+  margin-top: 4rem;
+}
+
+/* .............................PROJECT LAYOUT .......................................... */
+.project-layout {
+  width: 100%;
+  height: 95vh;
   position: relative;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem;
+  border-radius: 1rem;
+  overflow: auto;
 }
 .close-modal {
   font-size: 3rem;
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 1rem;
+  z-index: 20;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.project-content {
+  margin-top: 5rem;
+}
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: aliceblue;
+  top: 1rem;
+  right: 0;
+  width: 50%;
+  background-color: aliceblue;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.project-links a {
+  padding: 1em 2em;
+  background-color: red;
+}
+@media (max-width: 625px) {
+  .project-layout {
+    padding: 4rem;
+  }
+  .project-links {
+    width: 70%;
+  }
 }
 @media (max-width: 425px) {
   .filter-container button {
