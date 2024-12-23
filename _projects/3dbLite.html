@@ -4,8 +4,85 @@ description: A lightweight terminal-based DATABASE MANAGEMENT SYSTEM built using
 technologies: ["ruby"]
 link: "https://github.com/veiled-coder2/LiteDB"
 source: "https://github.com/veiled-coder2/LiteDB"
-imageUrl: assets/images/portfolioMockup.png
+imageUrl: assets/images/dblite.png
 projectid: 3
 ---
 
-<p>This is a details descritpion of my RUBY DBMS project</p>
+<div class="project-title">
+  <h3>🏬DBLITE:</h3>
+  <p>Solo project</p>
+</div>
+<p class="project-about">
+  LiteDB is a minified yet powerful terminal-based database management system
+  (DBMS) written in <b>Ruby</b>. It's designed to handle <b>SQL queries</b> for
+  database operations with both case-insensitive and case-sensitive support.
+  This lightweight DBMS uses <b>CSV files</b> as its storage backend, making it
+  easy to work with and perfect for small to medium-sized projects.
+</p>
+<h3>FEATURES</h3>
+<ul>
+  <li>
+    <b>SQL Query Support:</b> LiteDB supports essential SQL query commands like
+    SELECT, INSERT, UPDATE, and DELETE.
+  </li>
+  <li>
+    <b>Case Insensitivity:</b> You can use SQL queries in either uppercase or
+    lowercase letters, making it user-friendly and flexible.
+  </li>
+  <li>
+    <b>CSV-Based Storage:</b> LiteDB stores data in CSV files, making it easy to
+    work with and suitable for small-scale projects.
+  </li>
+  <li>
+    <b>Powerful Query Engine:</b> Utilizes regular expressions, hash
+    manipulation, loops, block arguments, and merge sort algorithms for
+    efficient query processing.
+  </li>
+</ul>
+
+<h3>Installation</h3>
+<p>
+  LiteDB requires Ruby to be installed on your system. You can install it using
+  the following steps:
+</p>
+<pre><code>
+git clone https://github.com/yourusername/LiteDB.git
+cd liteDb
+  </code></pre>
+
+<h3>Usage</h3>
+<p>On the terminal, run:</p>
+<pre><code>
+ruby my_sqlite_cli.rb
+  </code></pre>
+
+<p>
+  Interact with LiteDB through the command-line interface (CLI). Here are some
+  sample SQL queries:
+</p>
+
+<h3>SELECT</h3>
+<pre><code>
+SELECT name,email FROM nba_player_data WHERE name='Matt Zunic'
+  </code></pre>
+
+<h3>INSERT</h3>
+<p><b>Specific columns</b></p>
+<pre><code>
+INSERT INTO nba_player_data (name, year_start, year_end, position) VALUES ('Alaa Abdelnaby34', 1991, 1995, 'F-C')
+  </code></pre>
+
+<p><b>All columns</b></p>
+<pre><code>
+INSERT INTO nba_player_data VALUES (Alaa Abdelnaby34,1991,1995,F-C,6-10,240,"June 24, 1968",Duke University)
+  </code></pre>
+
+<h3>UPDATE</h3>
+<pre><code>
+UPDATE nba_player_data SET name = 'Bill Renamed', year_start = '2330' WHERE name = 'Bill Zopf', year_start = '1971'
+  </code></pre>
+
+<h3>DELETE</h3>
+<pre><code>
+DELETE FROM nba_player_data WHERE name = 'John'
+  </code></pre>
