@@ -87,16 +87,15 @@ button.view-project:hover,
 }
 .main-project-container {
   width: 90%;
-  height: 100vh;
+  height: 95vh;
   max-width: 80rem;
-  height: 100;
-  margin-top: 4rem;
+  overflow: auto;
 }
 
 /* .............................PROJECT LAYOUT .......................................... */
 .project-layout {
   width: 100%;
-  height: auto;
+  height: 100%;
   position: relative;
   background-color: var(--hero-bg);
   display: flex;
@@ -104,7 +103,7 @@ button.view-project:hover,
   align-items: center;
   padding: 6rem 8rem 8rem 8rem;
   border-radius: 1rem;
-  overflow-y: auto;
+  overflow: auto;
 }
 .close-modal {
   font-size: 3rem;
