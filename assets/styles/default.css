@@ -214,10 +214,7 @@ footer {
   #main-nav {
     display: none;
   }
-  #main-nav:hover{
-    width: 0;
-    margin: 0;
-  }
+
   #main-nav.visible-nav {
     height: 90vh;
     display: flex;
