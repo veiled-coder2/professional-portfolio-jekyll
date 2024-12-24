@@ -211,9 +211,11 @@ footer {
   #main-hamburger {
     z-index: 7000;
   }
+ 
   #main-nav {
+    pointer-events: none;
     display: none;
-  }
+}
 
   #main-nav.visible-nav {
     height: 90vh;
