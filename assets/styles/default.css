@@ -46,7 +46,7 @@ pre {
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 1rem;
-  font-size: 14px;
+  font-size:14px;
   line-height: 1.5;
   white-space: pre-wrap; /* Ensures wrapping */
   word-wrap: break-word; /* Break long words if needed */
@@ -209,6 +209,7 @@ button.theme {
     z-index: 6;
     top: 5rem;
   }
+  pre{font-size: 2.5vw;}
 }
 @media (max-width: 425px) {
   html {
