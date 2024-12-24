@@ -106,7 +106,6 @@ button.view-project:hover,
   overflow: auto;
 }
 .close-modal {
-  font-size: 3rem;
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -117,7 +116,9 @@ button.view-project:hover,
   color: white;
   font-weight: bolder;
 }
-
+.close-modal img {
+  width: 5rem;
+}
 .project-content {
   align-self: flex-start;
   font-size: 1.5rem;
@@ -184,5 +185,8 @@ button.view-project:hover,
 @media (max-width: 425px) {
   .filter-container button {
     padding: 0.5em 1em;
+  }
+  .close-modal img {
+    width: 3rem;
   }
 }

@@ -8,7 +8,9 @@ css:
     <a href="{{page.link}}" target="_blank">LIVE SITE </a>
     <a href="{{page.source}}" target="_blank">SOURCE CODE</a>
   </div>
-  <p class="close-modal">X</p>
+  <p class="close-modal">
+    <img src="{{site.baseurl}}/assets/images/cancel.svg" alt="class icon" />
+  </p>
   <div class="project-content">{{ content }}</div>
   <div class="tech-img">
     {% for tech in page.technologies%}
