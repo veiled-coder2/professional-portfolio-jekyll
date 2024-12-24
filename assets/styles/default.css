@@ -16,6 +16,7 @@
   --projectImg-bg: #324054;
   --projectDetails-bg: rgb(37, 35, 52);
   --pd-text: rgb(166, 226, 226);
+  --footer-bg:rgb(37, 35, 52);
 }
 body.dark-theme {
   --primary-color: white;
@@ -27,10 +28,12 @@ body.dark-theme {
   --projectImg-bg: #43937e;
   --projectDetails-bg: #185142;
   --pd-text: #e6edf7;
+  --footer-bg:#185142;
 }
 html {
   font-size: 62.5%;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   max-width: 100vw;
@@ -172,6 +175,14 @@ button.theme {
   margin-left: 5rem;
   transition: margin-left 0.5s ease-in-out;
 }
+/* ............................FOOTER............................. */
+footer {
+  background-color: var(--footer-bg);
+}
+.quick-links a {
+  font-size: 1.5rem;
+}
+
 /* MEDIA QUERY */
 
 @media (max-width: 768px) {

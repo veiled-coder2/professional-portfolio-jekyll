@@ -1,6 +1,6 @@
 <div class="mobileNav-container">
   <img
-    src="{{site.baseurl}}/assets//images/hamburger.svg"
+    src="{{site.baseurl}}assets//images/hamburger.svg"
     style="width: 3rem; height: auto"
     class="hamburger"
     id="main-hamburger"
@@ -11,32 +11,32 @@
 <nav id="main-nav">
   <ul>
     <li>
-      <a href="/">
-        <img src="{{site.baseurl}}/assets/images/home.svg" alt="Home icon" />
+      <a href="{{ site.baseurl | default: '/' }}">
+        <img src="{{site.baseurl}}assets/images/home.svg" alt="Home icon" />
 
         <span class="nav-title">Home</span></a
       >
     </li>
     <li>
-      <a href="/"
+      <a href="#projects"
         ><img
-          src="{{ site.baseurl }}/assets/images/project.svg"
+          src="{{ site.baseurl }}assets/images/project.svg"
           alt="project icon"
         /><span class="nav-title">Projects</span></a
       >
     </li>
     <li>
-      <a href="/"
+      <a href="#skills"
         ><img
-          src="{{ site.baseurl }}/assets/images/skill.svg"
+          src="{{ site.baseurl }}assets/images/skill.svg"
           alt="skill icon"
         /><span class="nav-title">Skills</span></a
       >
     </li>
     <li>
-      <a href="/"
+      <a href="{{ site.baseurl }}aboutme" title="learn more about veiled-coder"
         ><img
-          src="{{ site.baseurl }}/assets/images/about.svg"
+          src="{{ site.baseurl }}assets/images/about.svg"
           alt="About icon"
         /><span class="nav-title">About</span></a
       >
@@ -44,15 +44,15 @@
     <li>
       <a href="/"
         ><img
-          src="{{ site.baseurl }}/assets/images/contact.svg"
+          src="{{ site.baseurl }}assets/images/contact.svg"
           alt="contact icon"
         /><span class="nav-title">Contact</span></a
       >
     </li>
     <li>
-      <a href="/"
+      <a href="#"
         ><img
-          src="{{ site.baseurl }}/assets/images/resume.svg"
+          src="{{ site.baseurl }}assets/images/resume.svg"
           alt="resume icon"
         /><span class="nav-title">Resume</span></a
       >
