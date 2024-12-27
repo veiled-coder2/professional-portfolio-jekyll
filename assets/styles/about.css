@@ -1,17 +1,15 @@
 .profile-image {
   width: 100%;
-  height: 90vh;
+  height: 50vh;
   background: linear-gradient(
       to left,
       rgba(15, 44, 65, 0.1) 10%,
-      /* rgb(255, 255, 255) 80% */ var(--hero-bg) 90%
+      var(--hero-bg) 90%
     ),
     url("../images/aboutMe.png");
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* background-image: url("../images/aboutMe.png"); */
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -28,6 +26,41 @@
   text-align: justify;
   line-height: 1.8;
 }
+.contact-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact-btn a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--hero-bg);
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.contact-btn a:hover {
+  background-color: #bbffbf;
+  color: #324054;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.contact-btn a:focus {
+  outline: 2px solid #ff9f00;
+  outline-offset: 2px;
+}
+
 @media (max-width: 425px) {
   .bio {
     padding: 3rem;
